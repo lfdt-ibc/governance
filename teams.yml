@@ -1,0 +1,33 @@
+teams:
+  - name: lfdt-ibc-maintainers
+    maintainers:
+      - ryjones
+    members: []
+  - name: lfdt-staff
+    maintainers:
+      - jwagantall
+      - ryjones
+    members: []
+  - name: robots
+    maintainers:
+      - thelinuxfoundation
+    members:
+      - lfdt-bot
+  - name: security-managers
+    maintainers:
+      - ryjones
+    members:
+      - victorlepri
+repositories:
+  - name: .github
+    teams:
+      lfdt-ibc-maintainers: maintain
+      lfdt-staff: maintain
+      security-managers: read
+    visibility: public
+  - name: governance
+    teams:
+      lfdt-ibc-maintainers: maintain
+      lfdt-staff: maintain
+      security-managers: read
+    visibility: public
