@@ -1,4 +1,15 @@
 teams:
+  - name: ibc-tsc
+    maintainers:
+      - victorlepri
+    members:
+      - bluele
+      - dhfang
+      - dylankilkenny
+      - giocosmos
+      - gjermundgaraba
+      - srdtrk
+      - swift1337
   - name: lfdt-ibc-maintainers
     maintainers:
       - ryjones
@@ -8,6 +19,16 @@ teams:
       - jwagantall
       - ryjones
     members: []
+  - name: maintainers
+    maintainers:
+      - victorlepri
+    members:
+      - bluele
+      - dhfang
+      - dylankilkenny
+      - gjermundgaraba
+      - srdtrk
+      - swift1337
   - name: robots
     maintainers:
       - thelinuxfoundation
@@ -16,18 +37,44 @@ teams:
   - name: security-managers
     maintainers:
       - ryjones
-    members:
       - victorlepri
+    members: []
+
 repositories:
   - name: .github
     teams:
+      ibc-tsc: maintain
       lfdt-ibc-maintainers: maintain
       lfdt-staff: maintain
+      maintainers: maintain
       security-managers: read
     visibility: public
   - name: governance
     teams:
+      ibc-tsc: maintain
       lfdt-ibc-maintainers: maintain
       lfdt-staff: maintain
+      maintainers: maintain
+      security-managers: read
+    visibility: public
+  - name: ibc
+    teams:
+      ibc-tsc: maintain
+      lfdt-ibc-maintainers: read
+      maintainers: maintain
+      security-managers: read
+    visibility: public
+  - name: ibc-contracts
+    teams:
+      ibc-tsc: maintain
+      lfdt-ibc-maintainers: read
+      maintainers: maintain
+      security-managers: read
+    visibility: public
+  - name: ibc-go
+    teams:
+      ibc-tsc: maintain
+      lfdt-ibc-maintainers: read
+      maintainers: maintain
       security-managers: read
     visibility: public
